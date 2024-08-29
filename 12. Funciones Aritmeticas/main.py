@@ -36,7 +36,7 @@ def opcion_no_valida():
 def mostrar_productos():
     pass
 
-def cliente(nombre):
+def clienteFuncion(nombre):
 
     def carrito():
 
@@ -61,7 +61,7 @@ def cliente(nombre):
     def procesar_compra():
         pass
 
-def administrador(elemento,peticion):
+def administradorFuncion(elemento,peticion):
 
     def productos():
 
@@ -84,7 +84,7 @@ def administrador(elemento,peticion):
         def actualizar():
             pass
 
-    if (elemento == "cupones" & peticion == "crear"):
+    if (elemento == "cupones") and (peticion == "crear"):
         print("Crear Cupones")
 
 
@@ -129,7 +129,7 @@ def main():
                     opcion = int(input(f"Elija una opcion para trabajar: "))
 
                     if opcion == 1:
-                        administrador("cupones","crear")   
+                        administradorFuncion("cupones","crear")   
 
                 elif opcion == 3:
                     print("Saliente")
